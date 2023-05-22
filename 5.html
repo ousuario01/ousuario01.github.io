@@ -25,7 +25,8 @@
           grid-template-rows: 100vh;
         }
 	.auto-tamanho{
-	  max-width: 100%;
+	  width: 100%;
+	  height: auto;
 	}
       }
       @media (orientation: portrait){
@@ -35,7 +36,8 @@
           grid-template-rows: 10vh 90vh;
         }
 	.auto-tamanho{
-	  max-height: 100%;
+	  height: 100%;
+	  width: auto;
 	}
       }
     </style>
@@ -43,7 +45,7 @@
   <body>
     <div class="grid-container">
 	<div>
-	      <img class="auto-tamanho" height="auto" src="menu1.svg"></img>
+	      <img class="auto-tamanho" src="menu1.svg"></img>
 	</div>
 	<div>
 		<iframe name="conteúdo" title="inicial" src="https://bot10.enjoyflat.com.br/a0"></iframe>
