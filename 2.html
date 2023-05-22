@@ -18,18 +18,24 @@
         background: lightyellow; /* Just for styling */
       }
       iframe{      
-        display: block;  /* iframes are inline by default */   
-        height: 90vh;  /* Set height to 100% of the viewport height */   
-        width: 100vw;  /* Set width to 100% of the viewport width */     
         border: none; /* Remove default border */
         background: lightyellow; /* Just for styling */
+      }
+      .grid-container{
+        display: grid;
+        width: 100vw;
+        grid-template-rows: 10vh 90vh;
+        text-align: center;
       }
     </style>
   </head>
   <body>
-    <main>
-        Welcome to My Website
-    </main>
-    <iframe src="https://bot10.enjoyflat.com.br/a0"></iframe>
+    <div class="grid-container">
+      <div>1</div>
+      <div>
+        <iframe src="https://bot10.enjoyflat.com.br/a0">
+        </iframe>
+      </div>
+    </div>
   </body>
 </html>
