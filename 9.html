@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type=”text/css” href="./style.css">
+    <style>
+      body{
+        margin: 0; /* Remove default margin */
+        padding: 0;
+        border: none;
+      }
+      a:active,
+      a:clicked{
+        filter: drop-shadow(0px 0px 0px steelblue);
+        transition: filter 0s;
+      }
+      iframe{      
+        border: none;
+        display: block;
+        height: 100%;  /* Set height to 100% of the viewport height */   
+        width: 100%;  /* Set width to 100% of the viewport width */    
+      }
+	.grid-container{
+          display: grid;
+          grid-template-columns: 100vw;
+          grid-template-rows: 10vh 90vh;
+        }
+        .auto-tamanho{
+          height: 100%;
+          width: auto;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div>
+        <a href="7.html">
+          <img class="auto-tamanho" src="menu1.svg"></img>
+        </a>
+      </div>
+      <div>
+        <iframe name="conteúdo" title="inicial" src="https://bot10.enjoyflat.com.br/a0"></iframe>
+      </div>
+    </div>
+  </body>
+</html>
